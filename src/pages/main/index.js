@@ -36,7 +36,6 @@ const Main = () => {
 
     return (
         <>
-            <Search />
 
             <PokerInfo pokerInfo={teste} />
             <div className="actions">

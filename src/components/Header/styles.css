@@ -6,8 +6,18 @@ header#main-header {
     font-weight: bold;
     color: #ffffff;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.main-search {
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+.main-logo {
+    justify-content: center;
+    margin-left: 8%;
+
 }
 
 .pokedex-img {

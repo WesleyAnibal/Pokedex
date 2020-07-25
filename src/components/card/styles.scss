@@ -1,5 +1,7 @@
 $new-white: rgba(223, 223, 223, 0.596);
 $text-margin: 10px;
+$main-font: 'Yanone Kaffeesatz',
+sans-serif;
 
 .card-container {
     height: 200px;
@@ -12,6 +14,7 @@ $text-margin: 10px;
     flex-wrap: wrap;
     border-color: black;
     box-shadow: none;
+    font-family: $main-font;
     &.flipped {
         .front {
             transform: rotateY(180deg);
@@ -34,6 +37,8 @@ $text-margin: 10px;
         transition: -webkit-transform ease 500ms;
         transition: transform ease 500ms;
         flex-wrap: wrap;
+        font-family: $main-font;
+
     }
 
     .front {
@@ -51,19 +56,25 @@ $text-margin: 10px;
         margin-top: -25%;
     }
     .image-container {
-        position: flex;
+        position: relative;
+        margin-top: -10px;
+        justify-content: center;
+        text-align: center;
         .card-image {
             width: 100%;
             border-radius: 10px;
         }
         .title {
-            font-size: 34px;
-            position: absolute;
-            margin-bottom: $text-margin;
-            margin-left: $text-margin;
+            font-size: 20px;
+            position: relative;
             bottom: 0;
+            justify-content: center;
+            text-align: center;
             left: 0;
-            color: $new-white;
+            font-size: 30px;
+            position: absolute;
+            margin-bottom: -30px;
+            color: grey;
         }
     }
 }
