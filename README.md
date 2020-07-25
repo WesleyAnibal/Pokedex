@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Criação de um pokedex, usando a biblioteca React e a API https://pokeapi.co/
+
 ## Available Scripts
 
 In the project directory, you can run:
