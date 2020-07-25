@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
+import BlogCard from '../card/blog-card';
 
 
 const PokerInfo = ({pokerInfo}) => {
@@ -15,11 +16,9 @@ const PokerInfo = ({pokerInfo}) => {
 
    return <div className="pokemon-list">
     {pokerInfo.results?.map(pokemon => (
-        <article key={pokemon.name} onClick={() => name(pokemon.url) }>
-            <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.split("/")[6]}.png`}  alt="pokeballs" ></img>
-            <strong>{pokemon.name}</strong>
+        <article key={pokemon.name}>
+            <BlogCard pokemon={pokemon} className="card" ></BlogCard>
         </article>
-
     ))}
   </div>
 }

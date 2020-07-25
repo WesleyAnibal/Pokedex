@@ -1,5 +1,4 @@
 .pokemon-list {
-    max-width: 800px;
     margin: 20px auto 0;
     padding: 0 20px;
     display: flex;
@@ -7,12 +6,9 @@
 }
 
 .pokemon-list article {
-    background: #ffffff;
-    border: 1px solid #dddddd;
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 10px;
-    width:130px;
+    margin: 60px;
     transition: all 0.1s;
     margin: 5px;
     display: block;
@@ -20,29 +16,7 @@
     align-items: center;
 }
 
-.pokemon-list article a {
-    height: 42px;
-    border-radius: 5px;
-    border: 2px solid #da552f;
-    background: none;
-    margin-top: 10px;
-    color: #da552f;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
+.card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-}
-
-.pokemon-list article:hover {
-    background: #da552f;
-    color: #ffffff;
-}
-
-.pokemon-list article strong {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }

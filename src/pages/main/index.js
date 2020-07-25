@@ -3,6 +3,7 @@ import api from '../../services/api';
 import Search from '../../components/search/search';
 import PokerInfo from '../../components/poker-info/poker-info';
 import './styles.css'
+import BlogCard from '../../components/card/blog-card';
 
 
 const Main = () => {
@@ -38,7 +39,6 @@ const Main = () => {
             <Search />
 
             <PokerInfo pokerInfo={teste} />
-            
             <div className="actions">
                 <button onClick={prevPage}>Anterior</button>
                 <button onClick={nextPage}>Próximo</button>
